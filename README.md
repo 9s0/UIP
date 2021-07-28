@@ -1422,14 +1422,14 @@ function s0Lib:Window(text)
 
 					local Item = Instance.new("TextButton")
 					local ItemCorner = Instance.new("UICorner")
-					local ItemText = Instance.new("TextBox")
+					local ItemText = Instance.new("TextLabel")
 
 					Item.Name = "Item"
 					Item.Parent = DropItemHolder
 					Item.BackgroundColor3 = Color3.fromRGB(42, 44, 48)
 					Item.Size = UDim2.new(0, 379, 0, 29)
 					Item.AutoButtonColor = false
-					Item.Font = Enum.Font.SourceSansBold
+					Item.Font = Enum.Font.SourceSans
 					Item.Text = ""
 					Item.TextColor3 = Color3.fromRGB(0, 0, 0)
 					Item.TextSize = 14.000
@@ -1805,7 +1805,7 @@ function s0Lib:Window(text)
 
 			function ChannelContent:Label(text)
 				local Label = Instance.new("TextButton")
-				local LabelTitle = Instance.new("TextLabel")
+				local LabelTitle = Instance.new("TextBox")
 
 				Label.Name = "Label"
 				Label.Parent = ChannelHolder
