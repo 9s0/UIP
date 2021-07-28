@@ -1809,7 +1809,7 @@ function s0Lib:Window(text)
 
 				Button.Name = "Button"
 				Button.Parent = ChannelHolder
-				Button.BackgroundColor3 = Color3.fromRGB(52, 55, 61)
+				Button.BackgroundColor3 = Color3.fromRGB(40,40,40)
 				Button.Size = UDim2.new(0, 401, 0, 30)
 				Button.AutoButtonColor = false
 				Button.Font = Enum.Font.Gotham
