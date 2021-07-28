@@ -1422,7 +1422,7 @@ function s0Lib:Window(text)
 
 					local Item = Instance.new("TextButton")
 					local ItemCorner = Instance.new("UICorner")
-					local ItemText = Instance.new("TextLabel")
+					local ItemText = Instance.new("TextBox")
 
 					Item.Name = "Item"
 					Item.Parent = DropItemHolder
