@@ -1429,7 +1429,7 @@ function s0Lib:Window(text)
 					Item.BackgroundColor3 = Color3.fromRGB(42, 44, 48)
 					Item.Size = UDim2.new(0, 379, 0, 29)
 					Item.AutoButtonColor = false
-					Item.Font = Enum.Font.SourceSans
+					Item.Font = Enum.Font.SourceSansBold
 					Item.Text = ""
 					Item.TextColor3 = Color3.fromRGB(0, 0, 0)
 					Item.TextSize = 14.000
