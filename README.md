@@ -1804,34 +1804,22 @@ function s0Lib:Window(text)
 			end
 
 			function ChannelContent:Label(text)
-				local Label = Instance.new("TextButton")
-				local LabelTitle = Instance.new("TextBox")
+				local Button = Instance.new("TextButton")
+				local ButtonCorner = Instance.new("UICorner")
 
-				Label.Name = "Label"
-				Label.Parent = ChannelHolder
-				Label.BackgroundColor3 = Color3.fromRGB(40,40,40)
-				Label.BorderSizePixel = 0
-				Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
-				Label.Size = UDim2.new(0, 401, 0, 30)
-				Label.AutoButtonColor = false
-				Label.Font = Enum.Font.Gotham
-				Label.Text = ""
-				Label.TextColor3 = Color3.fromRGB(255, 255, 255)
-				Label.TextSize = 14.000
+				Button.Name = "Button"
+				Button.Parent = ChannelHolder
+				Button.BackgroundColor3 = Color3.fromRGB(52, 55, 61)
+				Button.Size = UDim2.new(0, 401, 0, 30)
+				Button.AutoButtonColor = false
+				Button.Font = Enum.Font.Gotham
+				Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Button.TextSize = 14.000
+				Button.Text = text
 
-				LabelTitle.Name = "LabelTitle"
-				LabelTitle.Parent = Label
-				LabelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				LabelTitle.BackgroundTransparency = 1.000
-				LabelTitle.Position = UDim2.new(0, 5, 0, 0)
-				LabelTitle.Size = UDim2.new(0, 200, 0, 30)
-				LabelTitle.Font = Enum.Font.Gotham
-				LabelTitle.Text = text
-				LabelTitle.TextColor3 = Color3.fromRGB(255, 123, 29)
-				LabelTitle.TextSize = 14.000
-				LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
-
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+				ButtonCorner.CornerRadius = UDim.new(0, 4)
+				ButtonCorner.Name = "ButtonCorner"
+				ButtonCorner.Parent = Button
 			end
 
 			function ChannelContent:Bind(text, presetbind, callback)
